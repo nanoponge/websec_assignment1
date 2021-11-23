@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web.cybersecurity.seu.edu</title>
+</head>
+<body>
+<script type="text/javascript">
+async function get_corsdate() {
+    const res = await fetch('http://time.cybersecurity.seu.edu/api/datecors')
+    const data = await res.json()
+    console.log(data)
+    }
+get_corsdate();
+async function get_date() {
+    const res = await fetch('http://time.cybersecurity.seu.edu/api/date')
+    const data = await res.json()
+    console.log(data)
+    }
+get_date();
+</script>
+
+</body>
+</html>
